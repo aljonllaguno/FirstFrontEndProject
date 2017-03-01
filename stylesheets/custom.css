@@ -1,0 +1,105 @@
+/* line 2, ../sass/custom.scss */
+header, #section1 footer, #section2 #article1 .p1, #section2 #article1 .p2, #section2 #article1 footer, #section2 #article2 footer, footer, p, nav {
+  clear: both;
+}
+
+/* line 6, ../sass/custom.scss */
+body {
+  background-color: dimgray;
+  text-align: center;
+}
+
+/* line 17, ../sass/custom.scss */
+header, #section1 footer, #section2 #article1 .p1, #section2 #article1 .p2, #section2 #article1 footer, #section2 #article2 footer, footer, p, aside, article, section, nav {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+/* line 42, ../sass/custom.scss */
+#header1 {
+  background-color: grey;
+}
+/* line 44, ../sass/custom.scss */
+#header1 nav {
+  padding: 10px 0px 10px 0px;
+  background-color: darkgrey;
+}
+
+/* line 46, ../sass/custom.scss */
+#section1 {
+  background-color: grey;
+  float: left;
+  width: 38.3%;
+  height: 60%;
+  margin: 5px 0px 5px 5px;
+}
+/* line 48, ../sass/custom.scss */
+#section1 header, #section1 footer, #section1 #section2 #article1 .p1, #section2 #article1 #section1 .p1, #section1 #section2 #article1 .p2, #section2 #article1 #section1 .p2, #section1 #section2 #article1 footer, #section2 #article1 #section1 footer, #section1 #section2 #article2 footer, #section2 #article2 #section1 footer {
+  padding: 10px 0px 10px 0px;
+  background-color: darkgrey;
+}
+/* line 49, ../sass/custom.scss */
+#section1 nav {
+  padding: 276px 0px 276px 0px;
+  background-color: darkgrey;
+}
+
+/* line 52, ../sass/custom.scss */
+#section2 {
+  background-color: grey;
+  float: right;
+  width: 60%;
+  height: 50%;
+  margin: 5px 5px 5px 0px;
+}
+/* line 54, ../sass/custom.scss */
+#section2 header, #section2 #section1 footer, #section1 #section2 footer, #section2 #article1 .p1, #section2 #article1 .p2, #section2 #article1 footer, #section2 #article2 footer {
+  padding: 10px 0px 10px 0px;
+  background-color: darkgrey;
+}
+/* line 55, ../sass/custom.scss */
+#section2 #article1 {
+  background-color: darkgrey;
+}
+/* line 57, ../sass/custom.scss */
+#section2 #article1 header, #section2 #article1 .p1, #section2 #article1 .p2, #section2 #article1 footer {
+  padding: 10px 0px 10px 0px;
+  background-color: #bcbcbc;
+}
+/* line 62, ../sass/custom.scss */
+#section2 #article2 {
+  background-color: darkgrey;
+}
+/* line 64, ../sass/custom.scss */
+#section2 #article2 header, #section2 #article2 #article1 .p1, #section2 #article1 #article2 .p1, #section2 #article2 #article1 .p2, #section2 #article1 #article2 .p2, #section2 #article2 footer {
+  padding: 10px 0px 10px 0px;
+  background-color: #bcbcbc;
+}
+/* line 65, ../sass/custom.scss */
+#section2 #article2 p {
+  float: left;
+  width: 68%;
+  margin: 1px 0px 5px 5px;
+  padding: 100px 0 100px 0;
+  background-color: #bcbcbc;
+}
+/* line 66, ../sass/custom.scss */
+#section2 #article2 aside {
+  float: right;
+  width: 29%;
+  margin: 1px 5px 0px 0px;
+  padding: 100px 0 100px 0;
+  background-color: #bcbcbc;
+}
+/* line 69, ../sass/custom.scss */
+#section2 footer {
+  padding: 10px 0px 10px 0px;
+  background-color: darkgrey;
+}
+
+/* line 71, ../sass/custom.scss */
+footer {
+  padding: 10px 0px 10px 0px;
+  background-color: darkgrey;
+}
