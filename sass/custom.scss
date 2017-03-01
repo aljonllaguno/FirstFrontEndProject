@@ -1,0 +1,73 @@
+
+header, footer, p, nav{
+  clear: both;
+}
+
+body{
+  background-color: dimgray;
+  text-align: center;
+}
+
+@mixin defaultBorder{
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+header, footer, p, aside, article, section, nav {
+  @include defaultBorder;
+}
+
+@mixin paddingbox ($padding, $backgroundColor){
+  padding: $padding;
+  background-color: $backgroundColor;
+}
+
+@mixin navigation ($float, $width, $margin, $padding, $backgroundColor){
+  float: $float;
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+  background-color: $backgroundColor;
+}
+
+@mixin section ($backgroundColor, $float, $width, $height, $margin){
+  background-color: $backgroundColor;
+  float:$float;
+  width: $width;
+  height: $height;
+  margin: $margin;
+}
+
+#header1 {
+  background-color: grey;
+  nav {@include paddingbox(10px 0px 10px 0px, darkgrey);}
+}
+#section1 {
+  @include section(grey, left, 38.3%, 60%, 5px 0px 5px 5px);
+    header {@include paddingbox(10px 0px 10px 0px, darkgrey);}
+    nav{@include paddingbox(276px 0px 276px 0px, darkgrey); }
+    footer{@extend header}
+}
+#section2 {
+  @include section(grey, right, 60%, 50%, 5px 5px 5px 0px);
+    header{@include paddingbox(10px 0px 10px 0px, darkgrey);}
+   #article1{
+      background-color: darkgrey;
+      header{@include paddingbox(10px 0px 10px 0px, #bcbcbc);}
+      .p1 {@extend header}
+      .p2 {@extend header}
+      footer{@extend header}
+    }
+  #article2{
+    background-color: darkgrey;
+    header{@include paddingbox(10px 0px 10px 0px, #bcbcbc);}
+    p{@include navigation(left, 68%, 1px 0px 5px 5px, 100px 0 100px 0, #bcbcbc);}
+    aside{@include navigation(right, 29%, 1px 5px 0px 0px, 100px 0 100px 0, #bcbcbc);}
+    footer {@extend header}
+  }
+  footer{@include paddingbox(10px 0px 10px 0px, darkgrey);}
+}
+footer{@include paddingbox(10px 0px 10px 0px, darkgrey);
+}
+
